@@ -5,4 +5,4 @@ const app = express();
 
 app.use(routes);
 
-app.listen(4000);
+app.listen(4000 || process.env.PORT);
