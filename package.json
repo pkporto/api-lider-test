@@ -1,12 +1,11 @@
 {
   "name": "backendlider",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "dev": "node src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +16,14 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkporto/api-lider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pkporto/api-lider/issues"
+  },
+  "homepage": "https://github.com/pkporto/api-lider#readme",
+  "description": ""
 }
