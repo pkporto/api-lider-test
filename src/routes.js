@@ -3,7 +3,7 @@ const routes = express.Router();
 
 const api = require('./app/services/api.js');
 
-routes.get('', (req, res) => {
+routes.get('/', (req, res) => {
     res.send('inicio');
 })
 

@@ -5,4 +5,4 @@ const app = express();
 
 app.use(routes);
 
-app.listen(process.env.PORT || 4200);
+module.exports = app;
