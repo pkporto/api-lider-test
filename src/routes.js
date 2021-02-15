@@ -19,5 +19,17 @@ routes.get('/products', async (req, res) => {
     }
 });
 
+routes.get('/products/:cat', async (req, res) => {
+    try {
+
+        const { data } = await api.get(`/products/category/${req.params.cat}`);
+
+        return res.send({ data });
+
+    } catch (error) {
+
+    }
+});
+
 
 module.exports = routes;

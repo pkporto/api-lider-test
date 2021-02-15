@@ -10,4 +10,12 @@ describe("Routes test", () => {
         expect(res.body).toHaveProperty('data');
     });
 
+    it("Should get products by categories", async () => {
+        const res = await request(app)
+            .get('/products/').query('electonics');
+
+        expect(res.statusCode).toEqual(200);
+        expect(res.body).toHaveProperty('data');
+    });
+
 });
